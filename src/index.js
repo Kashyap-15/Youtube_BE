@@ -6,7 +6,7 @@ dotenv.config({})
 const port = process.env.PORT || 8000;
 connectDB().then(()=>{
     app.listen(port,()=>{
-        console.log(`Server is Runnig At Port : ${port}`)
+        console.log(` Server is Runnig At Port : ${port}`)
     })
 }).catch((err)=>{
     console.log("MongoDB Connection Failed",err)
